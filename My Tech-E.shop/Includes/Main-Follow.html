@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset = "UTF-8">
+ <title><?php echo $page_title; ?></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="Includes/MyStyle.css">
+  
+    
+</head> 
+
+<style>
+    
+  
+
+    
+</style>
+
+
+<body class="body">
+    <div id="color">     
+        
+    <h1  class="leftcenter"><a href="MyTech-Eshop.php" style="color:black;"> Tech -E.shop</a></h1>
+        <p class="topright"><a href="Basket.php" class="fa fa-shopping-basket" style="color:mediumpurple; font-size: 20px;" >Καλάθι </a></p>
+      </div>
+ <p class="nav">
+    <a style="position: absolute; top:0px; left: 10px; color: mediumpurple;" href="Map.php" class="fa fa-globe" ></a>
+    <a style="position: absolute; top: 0px; left: 90px; color: mediumpurple;" href="Contact.php" class="fa fa-phone" ></a>
+      <a style="position: absolute; top: 0px; left:370px; color: darkgreen;" class="fa fa-user"  <?php 
+				if ( isset($_SESSION['User_Id'])) {
+					echo '<a href="LogOut.php" >Logout</a>';
+				} else {
+					echo '<a href="LogIn.php" style="position: absolute; top: 112px; left:430px;">Login</a>';
+				}
+			?> 
+    
+        
+   
+   
+    
+    
+     <a style="position: absolute; top: 0px; left: 250px; color: dodgerblue;" class="fa fa-user"  <?php 
+				if ( isset($_SESSION['User_Id'])) {
+					echo '<a href="#">Registered</a>';
+				} else {
+					echo '<a href="SignUp.php" style="position: absolute; top: 112px; left:310px;">Register</a>';
+				} 
+?>
+       
+
+   
+     
+     
+     
+  
+  <p id="bottomright">Follow Us!</p>
+  <a style="position: absolute;bottom: 10px; right: 106px;" href="https://www.facebook.com/stelios.vogiatzis.58" class="fa fa-facebook" ></a>
+  <a style="position: absolute;bottom: 10px; right: 16px;" href="https://www.instagram.com/SteliosVog/" class="fa fa-instagram" ></a>
+   
+     
+     <div class="sidebar">
+       
+<ul>
+   <li ><a>Υπολογιστές</a>
+       <ul>
+           <li><a href="Laptop.php">Λάπτοπ</a></li>
+           <li><a href="PersonaComputer.php">Υπολογιστές</a></li>
+       </ul>
+    </li>
+    <br><br>
+    
+   <li ><a>Εικόνα</a>
+       <ul>
+           <li><a href="Televisons.php">Τηλεοράσεις</a></li>
+           <li><a href="Monitors-TV.php">Οθόνες - Monitor</a></li>
+       </ul> 
+    </li>
+    <br><br>
+    
+   <li ><a>Ήχος</a>
+    <ul>
+        <li><a href="Speaker-sound.php">Ηχεία</a></li>
+        <li><a href="Earbuds.php">Ακουστικά</a></li>
+       </ul>
+    </li>
+    <br><br>
+    
+   <li ><a>Τεχνολογία</a>
+       <ul>
+           <li><a href="SmartPhones.php">Κινητά Τηλέφωνα</a></li>
+           <li><a href="Smartwatches.php">Έξυπνα Ρολόγια</a></li>
+       </ul>
+    </li>
+    <br><br>
+                        
+</ul>
+           
+</div>
+    
