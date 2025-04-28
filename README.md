@@ -7,5 +7,6 @@ Key Features:
 - Search Bar
 - Check Out
 - Alerts
+- Map of eshop locations
 
 
